@@ -67,12 +67,12 @@ export default async function MenuPage({
                                     {item.description}
                                 </p>
                                 <div className="flex gap-2">
-                                    {('isVegetarian' in item) && item.isVegetarian && (
+                                    {item.isVegetarian && (
                                         <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-500/10 text-green-400 ring-1 ring-inset ring-green-600/20">
                                             Vegetarian
                                         </span>
                                     )}
-                                    {('isSpicy' in item) && item.isSpicy && (
+                                    {item.isSpicy && (
                                         <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-red-500/10 text-red-400 ring-1 ring-inset ring-red-600/20">
                                             Spicy
                                         </span>

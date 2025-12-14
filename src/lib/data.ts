@@ -1,7 +1,6 @@
-import { ActionResponse } from "@/types";
-import { BookingFormData } from "@/lib/types";
+import { MenuItem } from "@/lib/types";
 
-export const MENU_ITEMS = [
+export const MENU_ITEMS: MenuItem[] = [
     {
         id: "1",
         name: "Truffle Arancini",
@@ -52,4 +51,4 @@ export const MENU_ITEMS = [
         category: "Desserts",
         image: "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?w=500&auto=format&fit=crop&q=60",
     },
-] as const;
+];
